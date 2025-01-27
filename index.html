@@ -25,18 +25,25 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
 </head>
+
+<style>
+/* Ensure all images within the member class have the same size */
+.member img {
+  width: 100%; /* Set the width to 100% of the parent container */
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  object-position: center; /* Centers the image within the container */
+}
+</style>
 
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">Core Crate</h1>
+      <a href="index.html" class=" d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="Core Crate Logo" class="logo-img">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -55,6 +62,7 @@
     </div>
   </header>
 
+  <br>
   <main class="main">
 
     <!-- Hero Section -->
@@ -63,7 +71,7 @@
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="200">
 
         <div class="carousel-item active">
-          <img src="https://www.shutterstock.com/shutterstock/photos/2464967719/display_1500/stock-photo-human-resource-management-hr-recruitment-leadership-and-teambuilding-business-and-technology-2464967719.jpg" alt="">
+          <img src="https://ik.imagekit.io/ixukhru6d/tr:w-2000,h-900/products/66bcd5f8ae22d/676be6ed44431generalimage.jpeg?ik-sdk-version=react-1.1.1" alt="">
           <div class="carousel-container">
           </div>
         </div><!-- End Carousel Item -->
@@ -268,32 +276,36 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="" class="testimonial-img" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDCrr_w4eRQBV36vW3owNqK3Hsesq6lNpSsA&s" class="testimonial-img" alt="">
                 <h3>ِAhmed Fouad</h3>
                 <h4>HR Director</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  <!-- <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i> -->
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>
+                    With over 15 years' experience in Human Resource Management across Middle East and North Africa regions, I have gained extensive knowledge and skills in partnering with business leaders to develop and implement people-centered HR strategies aimed at achieving optimal business development objectives. Furthermore, I have built a solid reputation as an influential executive with strong abilities in building and maintaining lasting professional relationships with key stakeholders towards increasing staff morale and driving operational efficiencies. I have a proven track record in leveraging analytical problem solving to guide management teams through restructuring processes, while maintaining high employee engagement and retention rates. Finally, my drive for helping people allows me to skillfully advocate for positive cultural change through various training and development programs.
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="" class="testimonial-img" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDCrr_w4eRQBV36vW3owNqK3Hsesq6lNpSsA&s" class="testimonial-img" alt="">
                 <h3>Karim Maamoun</h3>
                 <h4>CFO</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  <!-- <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i> -->
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>
+                    As a CFO with 20 years of experience, I bring a wealth of expertise in financial strategy, risk management, compliance, and operational efficiency. My role focuses on driving sustainable growth, optimizing resources, ensuring regulatory compliance, and providing strategic insights that empower impactful decision-making. With a proven track record in stakeholder relations, capital management, and navigating complex financial landscapes, I am committed to fostering long-term value for the organization.
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
@@ -312,20 +324,17 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Clients</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="/assets/img/clients/677ab79a59146generalimage.jpg" class="img-fluid" alt="" width="300px" height="200px">
+              <img src="/assets/img/clients/677ab79a59146generalimage.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>BLUE MOON</h4>
-                  <span>Advertisting & Event Management</span>
+                  <span>Advertising & Event Management</span>
                   <div class="social">
                     <a href=""><i class="bi bi-twitter-x"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -336,10 +345,10 @@
               </div>
             </div>
           </div><!-- End Team Member -->
-
+      
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="/assets/img/clients/677aaf1713b93generalimage.jpg" class="img-fluid" alt="">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qPtem804kzfRo_FaD8f0WNjNIxdCCHO61A&s" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>ECO IFM</h4>
@@ -354,14 +363,14 @@
               </div>
             </div>
           </div><!-- End Team Member -->
-
+      
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="/assets/img/clients/676bf0cae7b80generalimage.jpg" class="img-fluid" alt="">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV1KqYjpDIvmDQkqvcCn_onNpdcw6VRmRdew&s" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Seven Fortunes</h4>
-                  <span>COFFE ROASTERS</span>
+                  <span>COFFEE ROASTERS</span>
                   <div class="social">
                     <a href=""><i class="bi bi-twitter-x"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -372,10 +381,10 @@
               </div>
             </div>
           </div><!-- End Team Member -->
-
+      
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
-              <img src="/assets/img/clients/67704ed28b23bgeneralimage.jpg" class="img-fluid" alt="">
+              <img src="https://engexportdirectory.org/wp-content/uploads/2017/11/unionaire-logo.png" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Unionaire</h4>
@@ -390,9 +399,7 @@
               </div>
             </div>
           </div><!-- End Team Member -->
-
         </div>
-
       </div>
 
     </section><!-- /Team Section -->
@@ -400,87 +407,59 @@
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>We'd Like To Help You With Your Case</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Address</h3>
-              <p>40A Baghdad Street, Heliopolis, Cairo</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center info-item-borders">
-              <i class="bi bi-telephone"></i>
-              <h3>Call Us</h3>
-              <p>+201091026953</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center">
-              <i class="bi bi-envelope"></i>
-              <h3>Email Us</h3>
-              <p>Info@core-crate.com</p>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
-
-        <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
-
+      <div class="container my-5">
+        <h1 class="text-center mb-4">Contact Us</h1>
+        <div class="row">
             <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.676292258684!2d31.3247142!3d30.0924167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDA1JzMyLjciTiAzMcKwMTknMzYuOCJF!5e0!3m2!1sen!2sus!4v1698765432100!5m2!1sen!2sus&markers=color:red%7Clabel:A%7C30.0924167,31.3268889&z=15"
+              width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
             </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Position</label>
+                      <input type="text" class="form-control" id="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Company</label>
+                    <input type="text" class="form-control" id="email" required>
+                </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
             </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form><!-- End Contact Form -->
-
-      </div>
-
+        </div>
+    </div>
     </section><!-- /Contact Section -->
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer light-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo.png" alt="">
-            <span class="sitename">Core Crate</span>
+          <a href="index.html" class=" d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="" class="logo-img">
           </a>
+          <br>
           <div class="footer-contact">
             <p>40A Baghdad Street, Heliopolis</p>
             <p>Cairo , EGYPT</p>
@@ -488,11 +467,10 @@
             <p><strong>Email:</strong> <span>Info@core-crate.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href="#"><i class="bi bi-twitter-x"></i></a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-tiktok"></i></a>
+            <a href="https://www.facebook.com/share/15cSnjWnUT/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/corecrate_"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/corecrate/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@corecrate_?_t=8sS63VGa0wy&_r=1"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
 
@@ -518,22 +496,11 @@
           </ul>
         </div>
 
-        <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="#" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div> -->
-
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Core Crate</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong>Core Crate</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
@@ -563,7 +530,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao&libraries=places&callback=initMap" async defer></script>
   <script>
     // Initialize EmailJS
     emailjs.init('Mg1XL3erFQv845Vyj'); // Replace with your EmailJS User ID
@@ -600,7 +569,41 @@
         );
     });
   </script>
-  
+    <script>
+      function initMap() {
+          // Create a map centered at your location
+          const map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 14,
+              center: { lat: 30.0924167, lng: 31.3268889 }, // Your location
+          });
+
+          // Initialize the DirectionsService and DirectionsRenderer
+          const directionsService = new google.maps.DirectionsService();
+          const directionsRenderer = new google.maps.DirectionsRenderer();
+          directionsRenderer.setMap(map);
+
+          // Define the start and end points
+          const start = { lat: 30.0924167, lng: 31.3268889 }; // Your location
+          const end = { lat: 30.1000000, lng: 31.3500000 };   // Example destination
+
+          // Request directions from the DirectionsService
+          directionsService.route(
+              {
+                  origin: start,
+                  destination: end,
+                  travelMode: google.maps.TravelMode.DRIVING, // You can change this to WALKING, TRANSIT, etc.
+              },
+              (response, status) => {
+                  if (status === "OK") {
+                      // Display the directions on the map
+                      directionsRenderer.setDirections(response);
+                  } else {
+                      alert("Directions request failed: " + status);
+                  }
+              }
+          );
+      }
+  </script>
 </body>
 
 </html>
